@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source "{{ awscli_install_dir }}/{{ awscli_venv_name }}/bin/activate"
+
+{{ awscli_install_dir }}/{{ awscli_venv_name }}/bin/{{ item }} $@
+
+deactivate

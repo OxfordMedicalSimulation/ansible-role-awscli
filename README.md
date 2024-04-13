@@ -48,7 +48,7 @@ Example playbook for installing to single user:
 ```yaml
 - hosts: awscli_hosts
   roles:
-     - { role: xanmanning.awscli, awscli_version: 1.16.309 }
+     - { role: oxfordmedicalsimulation.awscli, awscli_version: 1.16.309 }
 ```
 
 Example playbook for installing the latest awscli version globally:
@@ -63,7 +63,7 @@ Example playbook for installing the latest awscli version globally:
     awscli_bin_dir: /usr/bin
     awscli_venv_name: current
   roles:
-    - role: xanmanning.awscli
+    - role: oxfordmedicalsimulation.awscli
 ```
 
 ### Activating the awscli venv

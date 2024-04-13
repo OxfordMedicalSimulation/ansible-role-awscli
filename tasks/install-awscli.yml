@@ -24,7 +24,7 @@
 
 - name: Ensure awscli is installed in a virtual environment
   pip:
-    name: awscliv2
+    name: git+git://github.com/aws/aws-cli.git
     version: "{{ awscli_version }}"
     state: present
     virtualenv: "{{ awscli_install_dir }}/{{ awscli_venv_name }}-{{ awscli_venv_suffix }}"
